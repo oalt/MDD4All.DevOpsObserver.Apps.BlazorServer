@@ -1,0 +1,14 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<button class="btn"
+        @onclick="Test">
+    Test
+</button>
+
+@if (MainViewModel != null)
+{
+    <MDD4All.DevOpsObserver.Views.StatusOverview DataContext="MainViewModel" />
+
+}

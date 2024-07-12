@@ -1,0 +1,34 @@
+{
+    "Systems": [
+        {
+            "GUID": "97EEBCE8-E443-4DAA-BE0E-99DA493981D5",
+            "Name": "KMRD Bitbucket",
+            "ServerURL": "https://api.bitbucket.org",
+            "Tenant": "karlmayertextile",
+            "SystemType": 0,
+            "ObservedAutomations": [
+                {
+                    "RepositoryName": "bitbucketpipelineobserver",
+                    "RepositoryBranch": "main",
+                    "Alias": "PipelineObserver"
+                },
+                {
+                    "RepositoryName": "bib4karl-dev",
+                    "RepositoryBranch": "main",
+                    "Alias": "Bib4KARL-dev"
+                },
+                {
+                    "RepositoryName": "kamcos3.tmcconfigconverter",
+                    "RepositoryBranch": "main",
+                    "Alias": "KAMCOS3.TMCConfigConverter"
+                },
+                {
+                    "RepositoryName": "kmrd.patterndata.datamodels",
+                    "RepositoryBranch": "main",
+                    "Alias": "KMRD.PatternData.DataModels"
+                }
+            ]
+
+        }
+    ]
+}
