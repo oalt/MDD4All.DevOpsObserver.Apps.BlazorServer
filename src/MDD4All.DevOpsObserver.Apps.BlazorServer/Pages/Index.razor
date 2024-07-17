@@ -2,13 +2,8 @@
 
 <PageTitle>Index</PageTitle>
 
-<button class="btn"
-        @onclick="Test">
-    Test
-</button>
-
-@if (MainViewModel != null)
+@if (DataContext != null)
 {
-    <MDD4All.DevOpsObserver.Views.StatusOverview DataContext="MainViewModel" />
+    <MDD4All.DevOpsObserver.Views.StatusOverview DataContext="DataContext" />
 
 }

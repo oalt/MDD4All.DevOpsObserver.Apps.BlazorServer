@@ -13,19 +13,34 @@
                     "Alias": "PipelineObserver"
                 },
                 {
-                    "RepositoryName": "bib4karl-dev",
-                    "RepositoryBranch": "main",
-                    "Alias": "Bib4KARL-dev"
-                },
-                {
-                    "RepositoryName": "kamcos3.tmcconfigconverter",
-                    "RepositoryBranch": "main",
-                    "Alias": "KAMCOS3.TMCConfigConverter"
-                },
-                {
                     "RepositoryName": "kmrd.patterndata.datamodels",
                     "RepositoryBranch": "main",
-                    "Alias": "KMRD.PatternData.DataModels"
+                    "Alias": "kmrd.patterndata.datamodels"
+                }
+            ]
+
+        },
+        {
+            "GUID": "36365013-02FA-414F-9050-31B4D3E651EB",
+            "Name": "Github oalt",
+            "ServerURL": "https://api.github.com",
+            "Tenant": "oalt",
+            "SystemType": 1,
+            "ObservedAutomations": [
+                {
+                    "RepositoryName": "MDD4All.SpecIF.DataProvider.File",
+                    "RepositoryBranch": "main",
+                    "Alias": "MDD4All.SpecIF.DataProvider.File"
+                },
+                {
+                    "RepositoryName": "SpecIFicator-dev",
+                    "RepositoryBranch": "main",
+                    "Alias": "SpecIFicator-dev"
+                },
+                {
+                    "RepositoryName": "MDD4All.SVG.DataModels",
+                    "RepositoryBranch": "main",
+                    "Alias": "MDD4All.SVG.DataModels"
                 }
             ]
 

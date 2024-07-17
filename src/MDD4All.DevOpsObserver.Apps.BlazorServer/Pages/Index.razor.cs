@@ -17,25 +17,11 @@ namespace MDD4All.DevOpsObserver.Apps.BlazorServer.Pages
         [Inject]
         DevOpsConfiguration DevOpsConfiguration { get; set; }
 
-        private MainViewModel? MainViewModel { get; set; }
+        private MainViewModel? DataContext { get; set; }
 
-        private async Task Test()
+        protected override void OnInitialized()
         {
-            IntegrationStatusProvider integrationStatusProvider = new IntegrationStatusProvider(Configuration, HttpClient);
-
-            List<DevOpsStatusInformation> status = await integrationStatusProvider.GetDevOpsStatusListAsync(DevOpsConfiguration.Systems[0]);
-
-            MainViewModel mainViewModel = new MainViewModel();
-
-            foreach (DevOpsStatusInformation statusItem in status)
-            {
-                StatusViewModel statusViewModel = new StatusViewModel(statusItem);
-
-                mainViewModel.StatusViewModels.Add(statusViewModel);
-            }
-
-            MainViewModel = mainViewModel;
-
+            DataContext = new MainViewModel(Configuration, HttpClient, DevOpsConfiguration);
         }
 
     }
