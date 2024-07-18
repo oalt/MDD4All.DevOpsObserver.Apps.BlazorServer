@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\MDD4All.DevOpsObserver.DataProviders.Integration\src\MDD4All.DevOpsObserver.DataProviders.Integration\MDD4All.DevOpsObserver.DataProviders.Integration-dev.csproj" />
+    <ProjectReference Include="..\..\..\MDD4All.DevOpsObserver.StatusLightControl.Hue\src\MDD4All.DevOpsObserver.StatusLightControl.Hue\MDD4All.DevOpsObserver.StatusLightControl.Hue-dev.csproj" />
     <ProjectReference Include="..\..\..\MDD4All.DevOpsObserver.Views\src\MDD4All.DevOpsObserver.Views\MDD4All.DevOpsObserver.Views-dev.csproj" />
   </ItemGroup>
 

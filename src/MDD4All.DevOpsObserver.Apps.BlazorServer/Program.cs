@@ -1,4 +1,6 @@
 using MDD4All.DevOpsObserver.DataModels;
+using MDD4All.DevOpsObserver.StatusLightControl.Contracts;
+using MDD4All.DevOpsObserver.StatusLightControl.Hue;
 using Newtonsoft.Json;
 
 namespace MDD4All.DevOpsObserver.Apps.BlazorServer
@@ -14,6 +16,12 @@ namespace MDD4All.DevOpsObserver.Apps.BlazorServer
             builder.Services.AddServerSideBlazor();
             builder.Services.AddHttpClient();
 
+            string ip = builder.Configuration["HueStatusLight:IP"];
+            string key = builder.Configuration["HueStatusLight:ApiKey"];
+            string bulbID = builder.Configuration["HueStatusLight:BulbID"];
+
+            HueStatusLightController hueStatusLightController = new HueStatusLightController(ip, key, bulbID);
+            builder.Services.AddSingleton<IStatusLightController>(hueStatusLightController);
 
             string configJSON = File.ReadAllText("DevOpsConfiguration.json");
 
