@@ -1,13 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>$(MSBuildProjectName.Replace("-dev", ""))</RootNamespace>
-    <AssemblyName>$(MSBuildProjectName.Replace("-dev", ""))</AssemblyName>
+    <AssemblyName>DevOpsObserver</AssemblyName>
     <UserSecretsId>bed3b955-4da6-44eb-9e96-ace7f0fe3023</UserSecretsId>
   </PropertyGroup>
+
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.0" />

@@ -27,11 +27,11 @@
             "Tenant": "oalt",
             "SystemType": 1,
             "ObservedAutomations": [
-                //{
-                //    "RepositoryName": "MDD4All.SpecIF.DataProvider.File",
-                //    "RepositoryBranch": "main",
-                //    "Alias": "MDD4All.SpecIF.DataProvider.File"
-                //},
+                {
+                    "RepositoryName": "MDD4All.DevOpsObserver-dev",
+                    "RepositoryBranch": "main",
+                    "Alias": "MDD4All.DevOpsObserver-dev"
+                }
                 //{
                 //    "RepositoryName": "MDD4All.SVG.DataModels",
                 //    "RepositoryBranch": "main",
