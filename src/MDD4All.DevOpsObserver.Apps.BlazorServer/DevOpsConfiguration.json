@@ -13,9 +13,9 @@
                     "Alias": "PipelineObserver"
                 },
                 {
-                    "RepositoryName": "kmrd.patterndata.datamodels",
+                    "RepositoryName": "devopstest",
                     "RepositoryBranch": "main",
-                    "Alias": "kmrd.patterndata.datamodels"
+                    "Alias": "DevOpsTest"
                 }
             ]
 
@@ -27,21 +27,16 @@
             "Tenant": "oalt",
             "SystemType": 1,
             "ObservedAutomations": [
-                {
-                    "RepositoryName": "MDD4All.SpecIF.DataProvider.File",
-                    "RepositoryBranch": "main",
-                    "Alias": "MDD4All.SpecIF.DataProvider.File"
-                },
-                {
-                    "RepositoryName": "SpecIFicator-dev",
-                    "RepositoryBranch": "main",
-                    "Alias": "SpecIFicator-dev"
-                },
-                {
-                    "RepositoryName": "MDD4All.SVG.DataModels",
-                    "RepositoryBranch": "main",
-                    "Alias": "MDD4All.SVG.DataModels"
-                }
+                //{
+                //    "RepositoryName": "MDD4All.SpecIF.DataProvider.File",
+                //    "RepositoryBranch": "main",
+                //    "Alias": "MDD4All.SpecIF.DataProvider.File"
+                //},
+                //{
+                //    "RepositoryName": "MDD4All.SVG.DataModels",
+                //    "RepositoryBranch": "main",
+                //    "Alias": "MDD4All.SVG.DataModels"
+                //}
             ]
 
         }
