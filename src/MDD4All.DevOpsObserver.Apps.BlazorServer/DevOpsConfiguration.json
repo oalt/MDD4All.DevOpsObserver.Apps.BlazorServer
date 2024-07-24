@@ -13,9 +13,9 @@
                     "Alias": "PipelineObserver"
                 },
                 {
-                    "RepositoryName": "devopstest",
+                    "RepositoryName": "bib4karl-dev",
                     "RepositoryBranch": "main",
-                    "Alias": "DevOpsTest"
+                    "Alias": "Bib4KARL-dev"
                 }
             ]
 

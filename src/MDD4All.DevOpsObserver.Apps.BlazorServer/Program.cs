@@ -16,6 +16,10 @@ namespace MDD4All.DevOpsObserver.Apps.BlazorServer
             builder.Services.AddServerSideBlazor();
             builder.Services.AddHttpClient();
 
+            builder.Configuration.AddJsonFile("ProductionSecrets.json",
+                                              optional: true,
+                                              reloadOnChange: true);
+
             string ip = builder.Configuration["HueStatusLight:IP"];
             string key = builder.Configuration["HueStatusLight:ApiKey"];
             string bulbID = builder.Configuration["HueStatusLight:BulbID"];
