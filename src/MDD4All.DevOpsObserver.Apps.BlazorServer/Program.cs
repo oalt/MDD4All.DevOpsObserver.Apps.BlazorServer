@@ -1,6 +1,7 @@
 using MDD4All.DevOpsObserver.DataModels;
 using MDD4All.DevOpsObserver.StatusLightControl.Contracts;
 using MDD4All.DevOpsObserver.StatusLightControl.Hue;
+using MDD4All.DevOpsObserver.ViewModels;
 using Newtonsoft.Json;
 
 namespace MDD4All.DevOpsObserver.Apps.BlazorServer
@@ -36,6 +37,7 @@ namespace MDD4All.DevOpsObserver.Apps.BlazorServer
                 builder.Services.AddSingleton<DevOpsConfiguration>(devOpsConfiguration);
             }
 
+            builder.Services.AddSingleton<MainViewModel>();
 
             WebApplication app = builder.Build();
 
